@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ShoppingCart, Store } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 import { Link } from 'react-router-dom'
 import './web.css'
 import { productos } from '../data/productos'
