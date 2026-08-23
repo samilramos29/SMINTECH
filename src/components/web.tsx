@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ShoppingCart, Store } from "lucide-react";
 import { Link } from 'react-router-dom'
 import './web.css'
 import { productos } from '../data/productos'
@@ -28,8 +29,7 @@ function App() {
           <a href="#contacto">About</a>
           <a href="#contacto">Contactos</a>
           <a href="/login">Login</a>
-          <button className="carrito-boton" onClick={abrirCarrito}>
-            Carrito{cantidadTotal > 0 && <span className="carrito-badge">{cantidadTotal}</span>}
+          <button className="carrito-boton" onClick={abrirCarrito}><ShoppingCart />{cantidadTotal > 0 && <span className="carrito-badge">{cantidadTotal}</span>}
           </button>
         </nav>
       </header>
